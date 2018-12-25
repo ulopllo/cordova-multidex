@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-multidex"
+        version="0.0.1"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>cordova-multidex</name>
+    <description>使Android支持multidex</description>
+
+    <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
+        <application android:name="android.support.multidex.MultiDexApplication"/>
+    </edit-config>
+
+    <platform name="android">
+        <hook src="updateMultidexManifest.js" type="before_compile"/>
+        <hook src="updateMultidexManifest.js" type="after_platform_add"/>
+
+        <framework custom="true" src="build.gradle" type="gradleReference"/>
+    </platform>
+
+</plugin>
