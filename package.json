@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhoumo99133/cordova-multidex"
+    "url": "https://github.com/zhoumo99133/cordova-multidex.git"
   },
   "bugs": {
-    "url": "https://github.com/zhoumo99133/cordova-multidex/issues"
+    "url": "git+https://github.com/zhoumo99133/cordova-multidex/issues"
   },
   "keywords": [
     "cordova",
